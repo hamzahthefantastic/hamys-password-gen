@@ -10,7 +10,7 @@ The password generator is implemented in JavaScript and works seamlessly with mo
 
 To use the generator, simply visit the site at https://hamzahthefantastic.github.io/hamys-password-gen. The site is designed to be responsive and should work on all modern devices and browsers.
 
-![Screenshot of the website](./assets/images/hamzah%20portfolio%20ss.jpg)
+![password-gen-ss](https://user-images.githubusercontent.com/118228180/212229266-2b1028bd-75cf-422c-bc47-2273b8b30aa7.PNG)
 
 ## License
 

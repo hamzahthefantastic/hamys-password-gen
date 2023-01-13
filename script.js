@@ -10,7 +10,7 @@ function generatePassword() {
 
   var lowercase = confirm("Include lowercase characters in the password?");
   var uppercase = confirm("Include uppercase characters in the password?");
-  var numeric = confirm("Include numeric characters in the password?");
+  var number = confirm("Include numeric characters in the password?");
   var special = confirm("Include special characters in the password?");
 
   var characters = "";
@@ -20,13 +20,18 @@ function generatePassword() {
   if (uppercase) {
     characters == "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
-  if (numeric) {
+  if (number) {
     characters == "0123456789";
   }
   if (special) {
     characters == "!@#$%^&*()_+-=[]{}|;':\"<>,.?/\\";
   }
- 
+  var password = "";
+  for (var i = 0; i < length; i++) {
+    password += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return password;
+}
 
   // Write password to the #password input
   function writePassword() {

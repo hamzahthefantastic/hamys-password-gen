@@ -15,16 +15,16 @@ function generatePassword() {
 
   var characters = "";
   if (lowercase) {
-    characters == "abcdefghijklmnopqrstuvwxyz";
+    characters += "abcdefghijklmnopqrstuvwxyz";
   }
   if (uppercase) {
-    characters == "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
   if (number) {
-    characters == "0123456789";
+    characters += "0123456789";
   }
   if (special) {
-    characters == "!@#$%^&*()_+-=[]{}|;':\"<>,.?/\\";
+    characters += "!@#$%^&*()_+-=[]{}|;':\"<>,.?/\\";
   }
   var password = "";
   for (var i = 0; i < length; i++) {
@@ -44,3 +44,4 @@ function generatePassword() {
 
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
+ 
